@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Студия спортивного танца «Колибри» | Для детей 4-17 лет</title>
+    <meta name="description" content="Студия спортивного танца Колибри: одна команда, один тренер, все дисциплины от хореографии до акробатики для детей от 4 до 17 лет">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <div class="logo-img-container">
+                    <img src="images/Colibri.png" alt="Логотип Колибри" class="logo-img">
+                    <div class="logo-fallback">
+                        <span>К</span>
+                    </div>
+                </div>
+                <span class="logo-text">Колибри</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">О студии</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#trainer">Тренер</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#directions">Направления</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#schedule">Расписание</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Последние новости</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="mb-3">Студия спортивного танца <span class="highlight">«Колибри»</span></h1>
+                    <p class="lead mb-4">Одна команда. Один тренер. <br>Целая вселенная возможностей.</p>
+                    <p class="h5 mb-4">Для детей от 4 до 17 лет</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#contacts" class="btn btn-primary btn-lg">
+                            <i class="fas fa-phone me-2"></i> Записаться на просмотр
+                        </a>
+                        <a href="#directions" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-play-circle me-2"></i> Смотреть направления
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Не школа, а семья. Не класс, а команда.</h2>
+            
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <p class="lead">В крупных сетях ваш ребёнок — один из многих. В разрозненных кружках — ограничен набором одного направления. В «Колибри» всё иначе.</p>
+                    <p>Наша уникальная система <strong class="text-primary">«один тренер — одна команда»</strong> позволяет каждому ребёнку пройти гармоничный путь от азов хореографии до вершин акробатического шоу.</p>
+                    <p>Тренер, который знает сильные и слабые стороны вашего ребёнка с первой тренировки, ведёт его через все дисциплины, обеспечивая безопасность, последовательность и настоящий командный дух.</p>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="bg-light-pastel rounded-4 p-4 h-100 d-flex align-items-center justify-content-center">
+                        <div class="text-center">
+                            <div class="display-1 text-primary mb-3">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>Атмосфера семьи и поддержки</h4>
+                            <p>Старшие помогают младшим, все поддерживают друг друга</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Атмосфера семьи</h4>
+                        <p>Старшие помогают младшим, все поддерживают друг друга</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Системный подход</h4>
+                        <p>Постепенное освоение дисциплин от простого к сложному</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Безопасность</h4>
+                        <p>Индивидуальный расчёт нагрузок для каждого ребёнка</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="trainer" class="section" style="background-color: var(--light-blue-pastel);">
+        <div class="container">
+            <h2 class="section-title text-center">Наш тренер</h2>
+            
+            <div class="row mt-5">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="trainer-photo">
+                        <div class="trainer-img-container">
+                            <img src="images/ОВ.jpg" alt="Ширлова Оксана Владимировна" class="trainer-img">
+                            <div class="trainer-img-fallback">
+                                <i class="fas fa-user-tie"></i>
+                                <span>Добавьте фото тренера</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3 p-3 bg-white rounded-4 shadow-sm">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-star text-warning me-2"></i>
+                            <span class="fw-bold">29 лет опыта работы с детьми</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-8">
+                    <h3 class="mb-3">Ширлова Оксана Владимировна</h3>
+                    <blockquote class="blockquote bg-white p-4 rounded-4 shadow-sm mb-4">
+                        <p class="mb-0">«Для меня «Колибри» — не работа, а жизнь. Я верю, что каждый ребёнок талантлив, а настоящий прогресс рождается там, где есть доверие и системный подход.»</p>
+                    </blockquote>
+                    
+                    <h5 class="mb-3">Квалификация и образование:</h5>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-graduation-cap fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h6>Высшее образование</h6>
+                                    <p class="small mb-0">Педагогическое и хореографическое</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-trophy fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h6>Мастер спорта</h6>
+                                    <p class="small mb-0">По спортивной гимнастике</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-certificate fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h6>Сертифицированный специалист</h6>
+                                    <p class="small mb-0">По детской спортивной физиологии</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-heartbeat fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h6>Курс первой помощи</h6>
+                                    <p class="small mb-0">Сертификат оказания первой помощи детям</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h5 class="mt-4 mb-3">Мой подход к тренировкам:</h5>
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <div class="bg-white p-3 rounded-4 shadow-sm h-100">
+                                <div class="text-primary mb-2">
+                                    <i class="fas fa-shield-alt fa-2x"></i>
+                                </div>
+                                <h6>Безопасность прежде всего</h6>
+                                <p class="small">Индивидуальный расчёт нагрузок, постепенное усложнение элементов</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-3">
+                            <div class="bg-white p-3 rounded-4 shadow-sm h-100">
+                                <div class="text-primary mb-2">
+                                    <i class="fas fa-chart-line fa-2x"></i>
+                                </div>
+                                <h6>Прогресс — это система</h6>
+                                <p class="small">Чёткая программа, где каждая дисциплина логично дополняет другую</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-3">
+                            <div class="bg-white p-3 rounded-4 shadow-sm h-100">
+                                <div class="text-primary mb-2">
+                                    <i class="fas fa-heart fa-2x"></i>
+                                </div>
+                                <h6>Команда — это семья</h6>
+                                <p class="small">Мы не конкурируем, а поддерживаем. Успех одного — радость для всех</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="directions" class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Наша система направлений</h2>
+            <p class="text-center lead mb-5">Все дисциплины — единая система подготовки в рамках одной команды под руководством одного тренера</p>
+            
+            <div class="timeline">
+                <div class="timeline-stage">
+                    <div class="stage-header">
+                        <div class="stage-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h4>4-6 лет: <span class="text-primary">ОСНОВЫ</span></h4>
+                    </div>
+                    <div class="stage-content">
+                        <ul class="mb-3">
+                            <li>Современная хореография (азы)</li>
+                            <li>Эстрадный танец в игровой форме</li>
+                            <li>Развитие ритмики и координации</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-stage">
+                    <div class="stage-header">
+                        <div class="stage-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4>7-9 лет: <span class="text-primary">РАЗВИТИЕ</span></h4>
+                    </div>
+                    <div class="stage-content">
+                        <ul class="mb-3">
+                            <li>Акробатический танец (начальный уровень)</li>
+                            <li>Чир-джаз (работа с предметами)</li>
+                            <li>Основы гимнастики</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-stage">
+                    <div class="stage-header">
+                        <div class="stage-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h4>10-13 лет: <span class="text-primary">СТАНОВЛЕНИЕ</span></h4>
+                    </div>
+                    <div class="stage-content">
+                        <ul class="mb-3">
+                            <li>Чир-спорт (сложные элементы)</li>
+                            <li>Танцевальное шоу (постановки)</li>
+                            <li>Участие в конкурсах</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-stage">
+                    <div class="stage-header">
+                        <div class="stage-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h4>14-17 лет: <span class="text-primary">МАСТЕРСТВО</span></h4>
+                    </div>
+                    <div class="stage-content">
+                        <ul class="mb-3">
+                            <li>Чир-пом фристайл</li>
+                            <li>Акробатическое шоу</li>
+                            <li>Создание собственных номеров</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule" class="section" style="background-color: var(--light-blue-pastel);">
+        <div class="container">
+            <h2 class="section-title text-center">Расписание занятий</h2>
+            <p class="text-center lead mb-5">Все группы уже сформированы, возможна запись в лист ожидания</p>
+            
+            <div class="table-responsive">
+                <table class="table table-hover bg-white shadow-sm">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Группа</th>
+                            <th>Возраст</th>
+                            <th>Дни</th>
+                            <th>Время</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Подготовительная группа II "Непоседы"</td>
+                            <td>4-6 лет</td>
+                            <td>Пн/Ср/Пт</td>
+                            <td>17:00-18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Подготовительная группа I "Карамельки"</td>
+                            <td>4-6 лет</td>
+                            <td>Вт/Чт</td>
+                            <td>17:30-18:30</td>
+                        </tr>
+                        <tr>
+                            <td>Младшая группа II "Конфетти"</td>
+                            <td>7-9 лет</td>
+                            <td>Пн/Ср/Пт</td>
+                            <td>16:00-17:30</td>
+                        </tr>
+                        <tr>
+                            <td>Младшая группа I "Егоза"</td>
+                            <td>7-9 лет</td>
+                            <td>Вт/Чт</td>
+                            <td>16:30-18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Средняя группа II "Адреналин"</td>
+                            <td>10-13 лет</td>
+                            <td>Пн/Ср/Пт</td>
+                            <td>18:30-20:00</td>
+                        </tr>
+                        <tr>
+                            <td>Средняя группа I "Сирены"</td>
+                            <td>10-13 лет</td>
+                            <td>Вт/Чт/Сб</td>
+                            <td>18:00-19:30</td>
+                        </tr>
+                        <tr>
+                            <td>Старшая группа "Экспрессия"</td>
+                            <td>14-17 лет</td>
+                            <td>Пн/Ср/Пт/Сб</td>
+                            <td>19:00-21:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="mt-5 bg-pastel-blue text-dark rounded-4 p-4 shadow-sm">
+                <div class="d-flex align-items-center">
+                    <div class="me-4 text-primary">
+                        <i class="fas fa-exclamation-circle fa-3x"></i>
+                    </div>
+                    <div>
+                        <h5 class="mb-2">Важно!</h5>
+                        <p class="mb-0">Все группы на текущий учебный год уже сформированы. Вы можете записаться в лист ожидания на следующий учебный год, связавшись с тренером по телефону <strong>+7 (906) 386-41-31</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Последние новости</h2>
+            
+            <div class="gallery-content active" id="competitions-gallery">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="gallery-item">
+                            <img src="images/Соревнование.jpg" alt="Соревнования" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <h5 class="gallery-text">Межрегиональный конкурс-фестиваль </h5>
+                                <p class="gallery-date">Ноябрь 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="gallery-item">
+
+                            <img src="images/Мероприятия.jpg" alt="Мероприятия" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <h5 class="gallery-text">Участие в праздничной концертной программе</h5>
+                                <p class="gallery-date">Ноябрь 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="gallery-item">
+
+                            <img src="images/Активности.jpg" alt="Активности" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <h5 class="gallery-text">Благодарственное письмо коллективу</h5>
+                                <p class="gallery-date">Ноябрь 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <p class="text-muted mb-3">
+                    
+                </p>
+                <a href="https://vk.com/sst_kolibri" class="btn btn-primary" target="_blank">
+                    <i class="fab fa-vk me-2"></i> Больше фото в ВКонтакте
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="section" style="background-color: var(--light-blue-pastel);">
+        <div class="container">
+            <h2 class="section-title text-center">Контакты и вопросы</h2>
+            
+            <div class="row mt-5">
+                <div class="col-lg-6 mb-5">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h5>Адрес студии</h5>
+                            <p class="mb-1">пр. 9-й Пятилетки, 26-А, Чебоксары</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h5>Телефон</h5>
+                            <p class="mb-0">+7 (906) 386-41-31</p>
+                            <p class="text-muted small mt-1">Оксана Владимировна</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h5>Telegram</h5>
+                            <p class="mb-1">+7 (906) 386-41-31</p>
+                            <p class="text-muted small">Для вопросов и записи в лист ожидания</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h5>Email</h5>
+                            <p class="mb-0">sst.kolibri@mail.ru</p>
+                        </div>
+                    </div>
+                    
+                    <div class="p-4 rounded-4 mt-4 bg-white">
+                        <h5>Часы работы:</h5>
+                        <ul class="mb-0">
+                            <li>Пн-Пт: 14:00-21:00</li>
+                            <li>Сб: 10:00-18:00</li>
+                            <li>Вс: выходной</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="rounded-4 overflow-hidden mb-4" style="height: 300px; background-color: white;">
+                        <div class="h-100 d-flex align-items-center justify-content-center">
+                            <div class="text-center">
+                                <i class="fas fa-map-marked-alt display-1 text-primary mb-3"></i>
+                                <h5>Карта проезда</h5>
+                                <p>пр. 9-й Пятилетки, 26-А, Чебоксары</p>
+                                <button class="btn btn-primary btn-sm mt-2" id="buildRoute">
+                                    <i class="fas fa-directions me-1"></i> Построить маршрут
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-section">
+                        <h4 class="mb-4">Частые вопросы</h4>
+                        
+                        <div class="faq-item mb-3">
+                            <button class="faq-question">
+                                Можно ли записаться на пробное занятие?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Да, можно записаться на просмотр занятия. Для этого позвоните по телефону +7 (906) 386-41-31 и согласуйте время.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item mb-3">
+                            <button class="faq-question">
+                                Есть ли свободные места в группах?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Все группы на текущий учебный год сформированы. Вы можете записаться в лист ожидания на следующий учебный год.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item mb-3">
+                            <button class="faq-question">
+                                Как часто проходят занятия?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Занятия проходят 2-4 раза в неделю в зависимости от возрастной группы. Продолжительность от 1 до 2 часов.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="logo-footer-container">
+                            <div class="logo-footer-bg">
+                                <img src="images/Colibri.png" alt="Логотип Колибри" class="logo-footer-img">
+                            </div>
+                            <div class="logo-footer-fallback">
+                                <span>К</span>
+                            </div>
+                        </div>
+                        <h4 class="text-white mb-0">Колибри</h4>
+                    </div>
+                    <p class="text-light opacity-75">Детский образцовый коллектив студия спортивного танца "Колибри". Является неоднократным победителем Международных, Всероссийских, Республиканских, Межрегиональных конкурсов, фестивалей, чемпионатов по танцевальному искусству.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-white mb-3">Разделы сайта</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about" class="text-light text-decoration-none d-block mb-2 opacity-75 hover-opacity-100">О студии</a></li>
+                        <li><a href="#trainer" class="text-light text-decoration-none d-block mb-2 opacity-75 hover-opacity-100">Наш тренер</a></li>
+                        <li><a href="#directions" class="text-light text-decoration-none d-block mb-2 opacity-75 hover-opacity-100">Направления</a></li>
+                        <li><a href="#schedule" class="text-light text-decoration-none d-block mb-2 opacity-75 hover-opacity-100">Расписание</a></li>
+                        <li><a href="#gallery" class="text-light text-decoration-none d-block mb-2 opacity-75 hover-opacity-100">Последние новости</a></li>
+                        <li><a href="#contacts" class="text-light text-decoration-none d-block mb-2 opacity-75 hover-opacity-100">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-white mb-3">Контакты</h5>
+                    <p class="text-light mb-2 opacity-75"><i class="fas fa-map-marker-alt me-2"></i> пр. 9-й Пятилетки, 26-А, Чебоксары</p>
+                    <p class="text-light mb-2 opacity-75"><i class="fas fa-phone me-2"></i> +7 (906) 386-41-31</p>
+                    <p class="text-light mb-0 opacity-75"><i class="fas fa-envelope me-2"></i> sst.kolibri@mail.ru</p>
+                    <p class="text-light mt-3 opacity-75 small"><i class="fas fa-clock me-2"></i> Пн-Пт: 14:00-21:00, Сб: 10:00-18:00</p>
+                </div>
+            </div>
+            
+            <hr class="bg-light my-4 opacity-25">
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-light mb-0 opacity-75">&copy; 2025 Студия спортивного танца «Колибри». Все права защищены.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-light mb-0 opacity-75">
+                        <a href="#" class="text-light text-decoration-none opacity-75 hover-opacity-100">Политика конфиденциальности</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
