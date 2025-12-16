@@ -218,6 +218,10 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 2px;
 }
 
+.text-primary {
+    color: var(--primary) !important; 
+}
+
 .text-center .section-title:after {
     left: 50%;
     transform: translateX(-50%);
