@@ -1,5 +1,4 @@
 :root {
-    /* Основной цвет и новая пастельная палитра */
     --primary: #5560D3;
     --primary-light: #6E78E0;
     --primary-dark: #404BC9;
@@ -706,5 +705,186 @@ h1, h2, h3, h4, h5, h6 {
     
     .d-flex.gap-3 {
         flex-direction: column;
+    }
+}
+/* Стили для модального окна записи */
+.modal-content {
+    border-radius: 20px;
+    border: none;
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+}
+
+.modal-header {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: white;
+    border-bottom: none;
+    padding: 25px 30px;
+}
+
+.modal-header .btn-close {
+    filter: invert(1) brightness(100%);
+    opacity: 0.8;
+}
+
+.modal-header .btn-close:hover {
+    opacity: 1;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.registration-status {
+    padding: 20px;
+    background-color: var(--light-blue-pastel);
+    border-radius: 15px;
+    border: 2px dashed var(--primary);
+}
+
+.registration-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.info-card {
+    background-color: var(--light-pastel);
+    border-radius: 15px;
+    border-left: 4px solid var(--primary);
+}
+
+.info-card ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.info-card li {
+    padding: 8px 0;
+    position: relative;
+    padding-left: 25px;
+}
+
+.info-card li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.info-card i {
+    color: var(--primary);
+}
+
+.form-control, .form-select {
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 2px solid var(--gray);
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(85, 96, 211, 0.1);
+}
+
+.form-check-input:checked {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.floating-registration-btn {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    z-index: 1000;
+    padding: 15px 25px;
+    border-radius: 50px;
+    box-shadow: 0 5px 20px rgba(85, 96, 211, 0.3);
+    animation: pulse 2s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 5px 20px rgba(85, 96, 211, 0.3);
+    }
+    50% {
+        box-shadow: 0 5px 25px rgba(85, 96, 211, 0.5);
+    }
+    100% {
+        box-shadow: 0 5px 20px rgba(85, 96, 211, 0.3);
+    }
+}
+
+.success-message {
+    display: none;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.success-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+    .floating-registration-btn {
+        bottom: 80px;
+        right: 20px;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .floating-registration-btn i {
+        margin-right: 5px;
+    }
+    
+    .modal-dialog {
+        margin: 10px;
+    }
+    
+    .modal-body {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .floating-registration-btn span {
+        display: none;
+    }
+    
+    .floating-registration-btn i {
+        margin-right: 0;
+        font-size: 1.2rem;
+    }
+    
+    .floating-registration-btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
