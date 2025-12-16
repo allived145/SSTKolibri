@@ -218,3 +218,124 @@ document.querySelectorAll('.gallery-item img').forEach(img => {
         this.src = 'https://images.unsplash.com/photo-1547153760-18fc86324498?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80';
     };
 });
+// Обработка формы предварительной записи
+document.getElementById('preRegistrationForm')?.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Собираем данные формы
+    const formData = {
+        childName: document.getElementById('childName').value,
+        childAge: document.getElementById('childAge').value,
+        parentName: document.getElementById('parentName').value,
+        phone: document.getElementById('phone').value,
+        email: document.getElementById('email').value,
+        comment: document.getElementById('comment').value,
+        timestamp: new Date().toISOString(),
+        type: 'pre-registration'
+    };
+    
+    // Валидация телефона
+    const phoneRegex = /^\+7\s?\(?\d{3}\)?\s?\d{3}-?\d{2}-?\d{2}$/;
+    if (!phoneRegex.test(formData.phone.replace(/\s/g, ''))) {
+        showAlert('Пожалуйста, введите корректный номер телефона в формате +7 (XXX) XXX-XX-XX', 'danger');
+        return;
+    }
+    
+    // Показываем индикатор загрузки
+    const submitBtn = this.querySelector('button[type="submit"]');
+    const originalText = submitBtn.innerHTML;
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i> Отправка...';
+    submitBtn.disabled = true;
+    
+    // Имитация отправки на сервер
+    setTimeout(() => {
+        // Показываем сообщение об успехе
+        const form = document.getElementById('preRegistrationForm');
+        const successHTML = `
+            <div class="success-message" style="display: block;">
+                <div class="success-icon mb-4">
+                    <i class="fas fa-check"></i>
+                </div>
+                <h4 class="mb-3">Заявка принята</h4>
+                <p class="text-muted mb-4">Ваша предварительная заявка успешно отправлена. Мы свяжемся с вами для подтверждения записи с 15 августа 2025 года.</p>
+                <div class="alert alert-info">
+                    <p class="mb-2"><strong>Номер вашей заявки:</strong> #${Date.now().toString().slice(-6)}</p>
+                    <p class="mb-0 small">Сохраните этот номер для отслеживания статуса.</p>
+                </div>
+                <button type="button" class="btn btn-primary mt-3" data-bs-dismiss="modal">
+                    Закрыть
+                </button>
+            </div>
+        `;
+        
+        form.innerHTML = successHTML;
+        
+        // Логирование данных формы
+        console.log('Заявка на запись отправлена:', formData);
+        
+        // Здесь можно добавить отправку на сервер
+        // sendToServer(formData);
+        
+    }, 1500);
+});
+
+// Функция для показа уведомлений
+function showAlert(message, type) {
+    const alertDiv = document.createElement('div');
+    alertDiv.className = `alert alert-${type} alert-dismissible fade show mb-4`;
+    alertDiv.innerHTML = `
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    `;
+    
+    const form = document.getElementById('preRegistrationForm');
+    form.parentNode.insertBefore(alertDiv, form);
+    
+    setTimeout(() => {
+        if (alertDiv.parentNode) {
+            const bsAlert = new bootstrap.Alert(alertDiv);
+            bsAlert.close();
+        }
+    }, 5000);
+}
+
+// Маска для телефона
+document.getElementById('phone')?.addEventListener('input', function(e) {
+    let value = this.value.replace(/\D/g, '');
+    
+    if (value.startsWith('7') || value.startsWith('8')) {
+        value = '+7' + value.slice(1);
+    } else if (value.startsWith('9')) {
+        value = '+7' + value;
+    }
+    
+    if (value.length > 2) {
+        value = value.slice(0, 2) + ' (' + value.slice(2);
+    }
+    if (value.length > 7) {
+        value = value.slice(0, 7) + ') ' + value.slice(7);
+    }
+    if (value.length > 12) {
+        value = value.slice(0, 12) + '-' + value.slice(12);
+    }
+    if (value.length > 15) {
+        value = value.slice(0, 15) + '-' + value.slice(15);
+    }
+    if (value.length > 18) {
+        value = value.slice(0, 18);
+    }
+    
+    this.value = value;
+});
+
+// Инициализация при загрузке страницы
+document.addEventListener('DOMContentLoaded', function() {
+    // Обработчик для открытия модального окна
+    document.querySelectorAll('[data-registration-modal]').forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const modal = new bootstrap.Modal(document.getElementById('registrationModal'));
+            modal.show();
+        });
+    });
+});
