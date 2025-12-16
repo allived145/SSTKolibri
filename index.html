@@ -606,5 +606,114 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     
     <script src="js/script.js"></script>
+    <!-- Модальное окно записи на занятие -->
+<div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="registrationModalLabel">Запись на занятия</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <!-- Левая колонка с информацией -->
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <!-- Блок с информацией о записи -->
+                        <div class="alert alert-info mb-4">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fas fa-calendar-alt fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h6 class="alert-heading mb-2">Запись на новый учебный год</h6>
+                                    <p class="mb-0">На данный момент все группы на текущий учебный год уже сформированы.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center mb-4">
+                            <div class="registration-status">
+                                <div class="registration-icon mb-3">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <h4>Запись откроется<br><span class="text-primary">с 15 августа 2025 года</span></h4>
+                                <p class="text-muted">на 2025-2026 учебный год</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card p-4 mb-4">
+                            <h6 class="mb-3"><i class="fas fa-info-circle me-2"></i> Что вы можете сделать сейчас:</h6>
+                            <ul class="mb-0">
+                                <li>Заполнить предварительную заявку</li>
+                                <li>Попасть в лист ожидания</li>
+                                <li>Получить консультацию тренера</li>
+                                <li>Запланировать просмотр занятия</li>
+                                <li>Узнать подробности о программе</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-light-pastel rounded-4 p-4">
+                            <h6 class="mb-3"><i class="fas fa-phone me-2"></i> Контакты для вопросов:</h6>
+                            <p class="mb-2"><strong>Телефон:</strong> +7 (906) 386-41-31</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <form id="preRegistrationForm">
+                            <div class="mb-3">
+                                <label for="childName" class="form-label">Имя ребенка *</label>
+                                <input type="text" class="form-control" id="childName" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="childAge" class="form-label">Возраст ребенка *</label>
+                                <select class="form-select" id="childAge" required>
+                                    <option value="" selected disabled>Выберите возраст</option>
+                                    <option value="4-6">4 года</option>
+                                    <option value="7-9">5 лет</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="parentName" class="form-label">Имя родителя *</label>
+                                <input type="text" class="form-control" id="parentName" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Телефон *</label>
+                                <input type="tel" class="form-control" id="phone" required placeholder="+7 (___) ___-__-__">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="email@example.com">
+                            </div>
+                            
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" id="agreement" required>
+                                <label class="form-check-label small" for="agreement">
+                                    Я даю согласие на обработку персональных данных и согласен(а) с <a href="#" class="text-primary">политикой конфиденциальности</a>
+                                </label>
+                            </div>
+                            
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-paper-plane me-2"></i> Оставить предварительную заявку
+                                </button>
+                                <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">
+                                    Закрыть
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button class="btn btn-primary floating-registration-btn" data-bs-toggle="modal" data-bs-target="#registrationModal">
+    <i class="fas fa-calendar-plus me-2"></i> Записаться
+</button>
 </body>
 </html>
