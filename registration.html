@@ -36,7 +36,7 @@
                     <li class="nav-item"><a class="nav-link" href="index.html#gallery">Последние новости</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#contacts">Контакты</a></li>
                     <li class="nav-item"><a class="nav-link btn btn-outline-primary ms-2" href="registration.html">
-                        <i class="fas fa-calendar-plus me-1"></i> Записаться
+                    <li class="nav-item"><a class="nav-link" href="registration.html#registration">Записаться</a>a></i>
                     </a></li>
                 </ul>
             </div>
@@ -62,97 +62,129 @@
             </div>
         </div>
     </section>
+
     <section class="section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-<div class="registration-card simple-form">
-    <div class="registration-header text-center">
-        <h3 class="mb-3">Предварительная запись</h3>
-        <p class="mb-0 opacity-90">Заполните основные данные для листа ожидания</p>
-    </div>
-    <div class="p-4 p-md-5">
-        <form id="registrationForm">
-            <div class="form-step" data-step="1">
-                <h5 class="mb-4">Основная информация</h5>
-                <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <label for="childName" class="form-label fw-semibold">Имя ребенка</label>
-                        <input type="text" class="form-control" id="childName" required 
-                               placeholder="Например: Анна">
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <label for="childAge" class="form-label fw-semibold">Возраст</label>
-                        <select class="form-select" id="childAge" required>
-                            <option value="" selected disabled>Выберите возраст</option>
-                            <option value="4-5">4 года</option>
-                            <option value="6-7">5 лет</option>
-                            <option value="8-9">6 лет</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-            <div class="form-step" data-step="2">
-                <h5 class="mb-4">Контактные данные</h5>
-                <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <label for="parentName" class="form-label fw-semibold">Имя родителя</label>
-                        <input type="text" class="form-control" id="parentName" required 
-                               placeholder="Ваше имя">
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <label for="phone" class="form-label fw-semibold">Телефон</label>
-                        <input type="tel" class="form-control" id="phone" required 
-                               placeholder="+7 (___) ___-__-__">
-                    </div>
-                </div>
-                
-                <div class="mb-4">
-                    <label for="email" class="form-label fw-semibold">Email</label>
-                    <input type="email" class="form-control" id="email" 
-                           placeholder="email@example.com">
-                </div>
-            </div>
-        
-            <div class="mb-4">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="agreement" required>
-                    <label class="form-check-label small" for="agreement">
-                        Я согласен(а) с обработкой персональных данных и даю согласие на 
-                        <a href="#" class="text-primary">политику конфиденциальности</a>*
-                    </label>
-                </div>
-            </div>
-            
-            <div class="d-grid gap-3">
-                <button type="submit" class="btn btn-record btn-lg py-3">
-                    Отправить заявку
-                </button>
-                <button type="button" class="btn btn-outline-primary" 
-                        onclick="window.location.href='index.html'">
-                    Вернуться на главную
-                </button>
-            </div>
-        </form>
-        <div id="successMessage" class="success-notification d-none mt-5">
-            <div class="icon">
-                <i class="fas fa-check"></i>
-            </div>
-            <h3 class="mb-3">Заявка принята!</h3>
-            <p class="mb-4">Ваша заявка №<span id="requestNumber" class="fw-bold">WA123456</span> 
-               успешно добавлена в листе ожидания.</p>
-            <p class="mb-4">Мы свяжемся с вами с 15 августа 2025 года.</p>
-            <div class="d-flex flex-wrap justify-content-center gap-3">
-                <button class="btn btn-light" onclick="window.location.href='index.html'">
-                    На главную
-                </button>
-                <button class="btn btn-outline-light" onclick="printRequest()">
-                    Сохранить номер
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
+                    <div class="registration-container">
+                        <div class="alert alert-info mb-5">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fas fa-info-circle fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5 class="alert-heading mb-2">Важная информация</h5>
+                                    <p class="mb-0">Все группы на текущий учебный год уже сформированы. Заполняя форму, вы попадаете в лист ожидания на 2025-2026 учебный год. Мы свяжемся с вами для уточнения деталей с 15 августа 2025 года.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-5">
+                            <div class="col-md-4 mb-4">
+                                <div class="feature-card text-center h-100">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <h5>Лист ожидания</h5>
+                                    <p>Попадаете в приоритетный список на следующий учебный год</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="feature-card text-center h-100">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-phone-volume"></i>
+                                    </div>
+                                    <h5>Первыми узнаете</h5>
+                                    <p>Мы свяжемся с вами как только появятся свободные места</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="feature-card text-center h-100">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-calendar-check"></i>
+                                    </div>
+                                    <h5>Бронирование</h5>
+                                    <p>Ваше место в листе ожидания закрепляется за вами</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <form id="registrationForm">
+                            <div class="card shadow-sm mb-4">
+                                <div class="card-header bg-primary text-white">
+                                    <h5 class="mb-0"><i class="fas fa-user-circle me-2"></i> Информация о ребенке</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="childFirstName" class="form-label">Имя ребенка</label>
+                                            <input type="text" class="form-control" id="childFirstName" required>
+                                        </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="childBirthDate" class="form-label">Дата рождения</label>
+                                            <input type="date" class="form-control" id="childBirthDate" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="childAge" class="form-label">Возраст</label>
+                                            <select class="form-select" id="childAge" required>
+                                                <option value="" selected disabled>Выберите возраст</option>
+                                                <option value="4">4 года</option>
+                                                <option value="5">5 лет</option>
+                                                <option value="6">6 лет</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                            <div class="card shadow-sm mb-4">
+                                <div class="card-header bg-primary text-white">
+                                    <h5 class="mb-0"><i class="fas fa-user-tie me-2"></i> Информация о родителе</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="parentName" class="form-label">Имя родителя</label>
+                                            <input type="text" class="form-control" id="parentName" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="parentPhone" class="form-label">Телефон</label>
+                                            <input type="tel" class="form-control" id="parentPhone" required placeholder="+7 (___) ___-__-__">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="parentEmail" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="parentEmail" required placeholder="email@example.com">
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="contactMethod" class="form-label">Предпочтительный способ связи</label>
+                                            <select class="form-select" id="contactMethod">
+                                                <option value="phone">Телефонный звонок</option>
+                                                <option value="whatsapp">WhatsApp</option>
+                                                <option value="telegram">Telegram</option>
+                                                <option value="email">Email</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" id="trialLesson" checked>
+                                        <label class="form-check-label" for="trialLesson">
+                                            Хочу записаться на пробное занятие (бесплатно)
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" id="emergencyContact">
+                                        <label class="form-check-label" for="emergencyContact">
+                                            Разрешаю связываться с экстренными контактами (в случае необходимости)
+                                        </label>
+                                    </div>
                                     
                                     <div class="form-check mb-4">
                                         <input class="form-check-input" type="checkbox" id="agreement" required>
@@ -182,7 +214,7 @@
                                 <p class="lead mb-4">Ваша заявка №<span id="requestNumber" class="fw-bold">123456</span> принята в лист ожидания на 2025-2026 учебный год.</p>
                                 <div class="alert alert-info mb-4">
                                     <h5 class="alert-heading"><i class="fas fa-clock me-2"></i> Что дальше?</h5>
-                                    <p class="mb-2">Мы свяжемся с вами с 15 августа 2025 года для уточнения деталей и предложения свободных мест в группах.</p>
+                                    <p class="mb-2">Мы свяжемся с вами с 15 августа 2025 года для уточнения деталей.</p>
                                     <p class="mb-0">Сохраните номер заявки для отслеживания статуса.</p>
                                 </div>
                                 <div class="d-flex justify-content-center gap-3">
@@ -220,31 +252,11 @@
                         
                         <div class="faq-item mb-3">
                             <button class="faq-question">
-                                Гарантирует ли лист ожидания место в группе?
-                                <i class="fas fa-chevron-down"></i>
-                            </button>
-                            <div class="faq-answer">
-                                <p>Лист ожидания дает приоритет при распределении мест. Чем раньше вы оставите заявку, тем выше ваши шансы получить место в желаемой группе. Мы гарантируем, что свяжемся со всеми в порядке очереди.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item mb-3">
-                            <button class="faq-question">
-                                Можно ли записаться на пробное занятие сейчас?
-                                <i class="fas fa-chevron-down"></i>
-                            </button>
-                            <div class="faq-answer">
-                                <p>Пробные занятия проводятся только при наличии свободных мест в действующих группах. Вы можете указать желание посетить пробное занятие в форме, и мы пригласим вас, когда появится такая возможность.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item mb-3">
-                            <button class="faq-question">
                                 Что нужно для первого занятия?
                                 <i class="fas fa-chevron-down"></i>
                             </button>
                             <div class="faq-answer">
-                                <p>Для пробного занятия подойдет удобная спортивная одежда, не сковывающая движения (легинсы, футболка, носки). Сменная обувь обязательна (чешки или балетки). Воду для питья можно взять с собой.</p>
+                                <p>Для пробного занятия подойдет удобная спортивная одежда, не сковывающая движения (легинсы, футболка, носки).</p>
                             </div>
                         </div>
                         
@@ -330,113 +342,157 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script>
-    // Упрощенная обработка формы
-    document.getElementById('registrationForm').addEventListener('submit', function(e) {
-        e.preventDefault();
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                childFirstName: document.getElementById('childFirstName').value,
+                childLastName: document.getElementById('childLastName').value,
+                childBirthDate: document.getElementById('childBirthDate').value,
+                childAge: document.getElementById('childAge').value,
+                experience: document.querySelector('input[name="experience"]:checked').value,
+                parentName: document.getElementById('parentName').value,
+                parentPhone: document.getElementById('parentPhone').value,
+                parentEmail: document.getElementById('parentEmail').value,
+                contactMethod: document.getElementById('contactMethod').value,
+                preferredSchedule: document.getElementById('preferredSchedule').value,
+                comments: document.getElementById('comments').value,
+                trialLesson: document.getElementById('trialLesson').checked,
+                emergencyContact: document.getElementById('emergencyContact').checked,
+                timestamp: new Date().toISOString()
+            };
+            
+            const phoneRegex = /^\+7\s?\(?\d{3}\)?\s?\d{3}-?\d{2}-?\d{2}$/;
+            if (!phoneRegex.test(formData.parentPhone.replace(/\s/g, ''))) {
+                showAlert('Пожалуйста, введите корректный номер телефона в формате +7 (XXX) XXX-XX-XX', 'danger');
+                return;
+            }
+            
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i> Отправка...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                const requestNumber = 'WA' + Date.now().toString().slice(-8);
+                document.getElementById('requestNumber').textContent = requestNumber;
+                
+                document.getElementById('registrationForm').classList.add('d-none');
+                document.getElementById('successMessage').classList.remove('d-none');
+                
+                console.log('Заявка на запись отправлена:', formData);
+                
+                window.scrollTo({
+                    top: document.getElementById('successMessage').offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            }, 1500);
+        });
         
-        // Собираем данные
-        const formData = {
-            childName: document.getElementById('childName').value,
-            childAge: document.getElementById('childAge').value,
-            parentName: document.getElementById('parentName').value,
-            phone: document.getElementById('phone').value,
-            email: document.getElementById('email').value,
-            timestamp: new Date().toLocaleString('ru-RU')
-        };
-        
-        // Проверка телефона
-        const phoneRegex = /^\+7\s?\(?\d{3}\)?\s?\d{3}-?\d{2}-?\d{2}$/;
-        if (!phoneRegex.test(formData.phone.replace(/\s/g, ''))) {
-            alert('Пожалуйста, введите корректный номер телефона');
-            return;
+        function printRequest() {
+            const printContent = `
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <title>Заявка в студию Колибри</title>
+                    <style>
+                        body { font-family: Arial, sans-serif; padding: 20px; }
+                        .header { text-align: center; margin-bottom: 30px; }
+                        .request-number { font-size: 18px; font-weight: bold; color: #5560D3; }
+                        .section { margin-bottom: 20px; }
+                        .label { font-weight: bold; color: #555; }
+                    </style>
+                </head>
+                <body>
+                    <div class="header">
+                        <h2>Студия спортивного танца «Колибри»</h2>
+                        <p>Заявка №${document.getElementById('requestNumber').textContent}</p>
+                        <p>Дата: ${new Date().toLocaleDateString('ru-RU')}</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>Информация о ребенке</h3>
+                        <p><span class="label">Имя:</span> ${document.getElementById('childFirstName').value}</p>
+                        <p><span class="label">Фамилия:</span> ${document.getElementById('childLastName').value}</p>
+                        <p><span class="label">Дата рождения:</span> ${document.getElementById('childBirthDate').value}</p>
+                        <p><span class="label">Возраст на сентябрь 2025:</span> ${document.getElementById('childAge').value} лет</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>Информация о родителе</h3>
+                        <p><span class="label">Имя родителя:</span> ${document.getElementById('parentName').value}</p>
+                        <p><span class="label">Телефон:</span> ${document.getElementById('parentPhone').value}</p>
+                        <p><span class="label">Email:</span> ${document.getElementById('parentEmail').value}</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>Примечания</h3>
+                        <p>Статус: Лист ожидания на 2025-2026 учебный год</p>
+                        <p>Дата обработки заявки: с 15 августа 2025 года</p>
+                    </div>
+                    
+                    <hr>
+                    <p style="font-size: 12px; color: #777; text-align: center;">
+                        Сохраните этот документ для отслеживания статуса заявки.<br>
+                        Контакты студии: +7 (906) 386-41-31, sst.kolibri@mail.ru
+                    </p>
+                </body>
+                </html>
+            `;
+            
+            const printWindow = window.open('', '_blank');
+            printWindow.document.write(printContent);
+            printWindow.document.close();
+            printWindow.focus();
+            printWindow.print();
         }
         
-        // Показываем анимацию отправки
-        const submitBtn = this.querySelector('button[type="submit"]');
-        const originalText = submitBtn.innerHTML;
-        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i> Отправка...';
-        submitBtn.disabled = true;
-        
-        // Имитация отправки
-        setTimeout(() => {
-            // Генерируем номер заявки
-            const requestNumber = 'WA' + Date.now().toString().slice(-6);
-            document.getElementById('requestNumber').textContent = requestNumber;
+        function showAlert(message, type) {
+            const alertDiv = document.createElement('div');
+            alertDiv.className = `alert alert-${type} alert-dismissible fade show mb-4`;
+            alertDiv.innerHTML = `
+                ${message}
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            `;
             
-            // Показываем успешное сообщение
-            document.getElementById('registrationForm').classList.add('d-none');
-            document.getElementById('successMessage').classList.remove('d-none');
+            const form = document.getElementById('registrationForm');
+            form.parentNode.insertBefore(alertDiv, form);
             
-            // Прокручиваем к сообщению
-            document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth' });
-            
-            // Сохраняем в локальное хранилище (опционально)
-            localStorage.setItem('kolibri_request_' + requestNumber, JSON.stringify({
-                ...formData,
-                requestNumber: requestNumber,
-                status: 'waiting_list'
-            }));
-            
-            console.log('Заявка сохранена:', formData);
-        }, 1500);
-    });
-
-    // Форматирование телефона
-    document.getElementById('phone')?.addEventListener('input', function(e) {
-        let value = this.value.replace(/\D/g, '');
-        
-        if (value.startsWith('7') || value.startsWith('8')) {
-            value = '+7' + value.slice(1);
-        } else if (value.startsWith('9') && value.length === 10) {
-            value = '+7' + value;
+            setTimeout(() => {
+                if (alertDiv.parentNode) {
+                    const bsAlert = new bootstrap.Alert(alertDiv);
+                    bsAlert.close();
+                }
+            }, 5000);
         }
         
-        // Форматирование
-        if (value.length > 2) value = value.slice(0, 2) + ' ' + value.slice(2);
-        if (value.length > 6) value = value.slice(0, 6) + ' ' + value.slice(6);
-        if (value.length > 10) value = value.slice(0, 10) + ' ' + value.slice(10);
-        if (value.length > 13) value = value.slice(0, 13) + ' ' + value.slice(13);
-        if (value.length > 16) value = value.slice(0, 16);
-        
-        this.value = value;
-    });
-
-    // Функция печати
-    function printRequest() {
-        const requestNumber = document.getElementById('requestNumber').textContent;
-        const printWindow = window.open('', '_blank');
-        printWindow.document.write(`
-            <html>
-            <head>
-                <title>Заявка №${requestNumber}</title>
-                <style>
-                    body { font-family: Arial, sans-serif; padding: 30px; }
-                    .header { text-align: center; margin-bottom: 30px; }
-                    .number { color: #6A11CB; font-size: 24px; font-weight: bold; }
-                    .info { background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0; }
-                </style>
-            </head>
-            <body>
-                <div class="header">
-                    <h2>Студия танца «Колибри»</h2>
-                    <p class="number">№${requestNumber}</p>
-                    <p>Заявка в листе ожидания</p>
-                </div>
-                <div class="info">
-                    <p><strong>Сохраните этот номер для отслеживания</strong></p>
-                    <p>Мы свяжемся с вами с 15 августа 2025 года</p>
-                    <p>Телефон для вопросов: +7 (906) 386-41-31</p>
-                </div>
-                <p style="text-align: center; color: #666; font-size: 12px;">
-                    Дата: ${new Date().toLocaleDateString('ru-RU')}
-                </p>
-            </body>
-            </html>
-        `);
-        printWindow.document.close();
-        printWindow.focus();
-        printWindow.print();
-    }
-</script>
+        document.getElementById('parentPhone')?.addEventListener('input', function(e) {
+            let value = this.value.replace(/\D/g, '');
+            
+            if (value.startsWith('7') || value.startsWith('8')) {
+                value = '+7' + value.slice(1);
+            } else if (value.startsWith('9')) {
+                value = '+7' + value;
+            }
+            
+            if (value.length > 2) {
+                value = value.slice(0, 2) + ' (' + value.slice(2);
+            }
+            if (value.length > 7) {
+                value = value.slice(0, 7) + ') ' + value.slice(7);
+            }
+            if (value.length > 12) {
+                value = value.slice(0, 12) + '-' + value.slice(12);
+            }
+            if (value.length > 15) {
+                value = value.slice(0, 15) + '-' + value.slice(15);
+            }
+            if (value.length > 18) {
+                value = value.slice(0, 18);
+            }
+            
+            this.value = value;
+        });
+    </script>
 </body>
 </html>
