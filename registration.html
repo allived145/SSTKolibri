@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись на занятия | Студия спортивного танца «Колибри»</title>
+    <meta name="description" content="Запись на занятия в студию спортивного танца Колибри. Для детей от 4 до 17 лет. Лист ожидания на 2025-2026 учебный год.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="logo-img-container">
+                    <img src="images/Colibri.png" alt="Логотип Колибри" class="logo-img">
+                    <div class="logo-fallback">
+                        <span>К</span>
+                    </div>
+                </div>
+                <span class="logo-text">Колибри</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">О студии</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#trainer">Тренер</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#directions">Направления</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#schedule">Расписание</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#gallery">Последние новости</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacts">Контакты</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-primary ms-2" href="registration.html">
+                        <i class="fas fa-calendar-plus me-1"></i> Записаться
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero registration-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="mb-3">Запись на занятия</h1>
+                    <p class="lead mb-4">Оставьте предварительную заявку на 2025-2026 учебный год</p>
+                    <div class="d-flex align-items-center">
+                        <div class="me-4">
+                            <i class="fas fa-calendar-alt fa-3x text-accent"></i>
+                        </div>
+                        <div>
+                            <h5>Запись откроется <span class="highlight">15 августа 2025 года</span></h5>
+                            <p class="mb-0">На данный момент вы можете попасть в лист ожидания</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="registration-container">
+                        <div class="alert alert-info mb-5">
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fas fa-info-circle fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5 class="alert-heading mb-2">Важная информация</h5>
+                                    <p class="mb-0">Все группы на текущий учебный год уже сформированы. Заполняя форму, вы попадаете в лист ожидания на 2025-2026 учебный год. Мы свяжемся с вами для уточнения деталей с 15 августа 2025 года.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-5">
+                            <div class="col-md-4 mb-4">
+                                <div class="feature-card text-center h-100">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <h5>Лист ожидания</h5>
+                                    <p>Попадаете в приоритетный список на следующий учебный год</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="feature-card text-center h-100">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-phone-volume"></i>
+                                    </div>
+                                    <h5>Первыми узнаете</h5>
+                                    <p>Мы свяжемся с вами как только появятся свободные места</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="feature-card text-center h-100">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-calendar-check"></i>
+                                    </div>
+                                    <h5>Бронирование</h5>
+                                    <p>Ваше место в листе ожидания закрепляется за вами</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <form id="registrationForm">
+                            <div class="card shadow-sm mb-4">
+                                <div class="card-header bg-primary text-white">
+                                    <h5 class="mb-0"><i class="fas fa-user-circle me-2"></i> Информация о ребенке</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="childFirstName" class="form-label">Имя ребенка*</label>
+                                            <input type="text" class="form-control" id="childFirstName" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="childLastName" class="form-label">Фамилия ребенка*</label>
+                                            <input type="text" class="form-control" id="childLastName" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="childBirthDate" class="form-label">Дата рождения*</label>
+                                            <input type="date" class="form-control" id="childBirthDate" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="childAge" class="form-label">Возраст на сентябрь 2025*</label>
+                                            <select class="form-select" id="childAge" required>
+                                                <option value="" selected disabled>Выберите возраст</option>
+                                                <option value="4">4 года</option>
+                                                <option value="5">5 лет</option>
+                                                <option value="6">6 лет</option>
+                                                <option value="7">7 лет</option>
+                                                <option value="8">8 лет</option>
+                                                <option value="9">9 лет</option>
+                                                <option value="10">10 лет</option>
+                                                <option value="11">11 лет</option>
+                                                <option value="12">12 лет</option>
+                                                <option value="13">13 лет</option>
+                                                <option value="14">14 лет</option>
+                                                <option value="15">15 лет</option>
+                                                <option value="16">16 лет</option>
+                                                <option value="17">17 лет</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label class="form-label">Опыт занятий танцами/гимнастикой</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="experience" id="experienceNone" value="none" checked>
+                                            <label class="form-check-label" for="experienceNone">
+                                                Нет опыта
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="experience" id="experienceBeginner" value="beginner">
+                                            <label class="form-check-label" for="experienceBeginner">
+                                                Занимался(ась) ранее (до 1 года)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="experience" id="experienceIntermediate" value="intermediate">
+                                            <label class="form-check-label" for="experienceIntermediate">
+                                                Занимался(ась) регулярно (1-3 года)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card shadow-sm mb-4">
+                                <div class="card-header bg-primary text-white">
+                                    <h5 class="mb-0"><i class="fas fa-user-tie me-2"></i> Информация о родителе</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="parentName" class="form-label">Имя родителя*</label>
+                                            <input type="text" class="form-control" id="parentName" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="parentPhone" class="form-label">Телефон*</label>
+                                            <input type="tel" class="form-control" id="parentPhone" required placeholder="+7 (___) ___-__-__">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="parentEmail" class="form-label">Email*</label>
+                                            <input type="email" class="form-control" id="parentEmail" required placeholder="email@example.com">
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="contactMethod" class="form-label">Предпочтительный способ связи</label>
+                                            <select class="form-select" id="contactMethod">
+                                                <option value="phone">Телефонный звонок</option>
+                                                <option value="whatsapp">WhatsApp</option>
+                                                <option value="telegram">Telegram</option>
+                                                <option value="email">Email</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card shadow-sm mb-4">
+                                <div class="card-header bg-primary text-white">
+                                    <h5 class="mb-0"><i class="fas fa-comments me-2"></i> Дополнительная информация</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="mb-3">
+                                        <label for="preferredSchedule" class="form-label">Предпочтительное время занятий</label>
+                                        <select class="form-select" id="preferredSchedule">
+                                            <option value="any">Любое время</option>
+                                            <option value="morning">Утро (до 14:00)</option>
+                                            <option value="afternoon">День (14:00-17:00)</option>
+                                            <option value="evening">Вечер (после 17:00)</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="comments" class="form-label">Комментарии/Вопросы</label>
+                                        <textarea class="form-control" id="comments" rows="3" placeholder="Опишите особенности здоровья ребенка, укажите удобные дни для звонка, задайте вопросы..."></textarea>
+                                    </div>
+                                    
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" id="trialLesson" checked>
+                                        <label class="form-check-label" for="trialLesson">
+                                            Хочу записаться на пробное занятие (бесплатно)
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" id="emergencyContact">
+                                        <label class="form-check-label" for="emergencyContact">
+                                            Разрешаю связываться с экстренными контактами (в случае необходимости)
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" id="agreement" required>
+                                        <label class="form-check-label small" for="agreement">
+                                            Я даю согласие на обработку персональных данных и согласен(а) с <a href="#" class="text-primary">политикой конфиденциальности</a>*
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="d-grid gap-2 mb-5">
+                                <button type="submit" class="btn btn-primary btn-lg py-3">
+                                    <i class="fas fa-paper-plane me-2"></i> Отправить заявку в лист ожидания
+                                </button>
+                                <button type="button" class="btn btn-outline-primary" onclick="window.location.href='index.html'">
+                                    <i class="fas fa-arrow-left me-2"></i> Вернуться на главную
+                                </button>
+                            </div>
+                        </form>
+                        
+                        <div id="successMessage" class="d-none">
+                            <div class="text-center p-5 bg-light-pastel rounded-4">
+                                <div class="success-icon mb-4">
+                                    <i class="fas fa-check-circle fa-4x text-success"></i>
+                                </div>
+                                <h3 class="mb-3">Заявка успешно отправлена!</h3>
+                                <p class="lead mb-4">Ваша заявка №<span id="requestNumber" class="fw-bold">123456</span> принята в лист ожидания на 2025-2026 учебный год.</p>
+                                <div class="alert alert-info mb-4">
+                                    <h5 class="alert-heading"><i class="fas fa-clock me-2"></i> Что дальше?</h5>
+                                    <p class="mb-2">Мы свяжемся с вами с 15 августа 2025 года для уточнения деталей и предложения свободных мест в группах.</p>
+                                    <p class="mb-0">Сохраните номер заявки для отслеживания статуса.</p>
+                                </div>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <button type="button" class="btn btn-primary" onclick="window.location.href='index.html'">
+                                        <i class="fas fa-home me-2"></i> На главную
+                                    </button>
+                                    <button type="button" class="btn btn-outline-primary" onclick="printRequest()">
+                                        <i class="fas fa-print me-2"></i> Распечатать заявку
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background-color: var(--light-blue-pastel);">
+        <div class="container">
+            <h2 class="section-title text-center">Частые вопросы о записи</h2>
+            
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="faq-section">
+                        <div class="faq-item mb-3">
+                            <button class="faq-question">
+                                Когда именно откроется запись на новый учебный год?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Запись на 2025-2026 учебный год откроется 15 августа 2025 года. В этот день мы начнем обзванивать всех, кто находится в листе ожидания, и предлагать свободные места.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item mb-3">
+                            <button class="faq-question">
+                                Гарантирует ли лист ожидания место в группе?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Лист ожидания дает приоритет при распределении мест. Чем раньше вы оставите заявку, тем выше ваши шансы получить место в желаемой группе. Мы гарантируем, что свяжемся со всеми в порядке очереди.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item mb-3">
+                            <button class="faq-question">
+                                Можно ли записаться на пробное занятие сейчас?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Пробные занятия проводятся только при наличии свободных мест в действующих группах. Вы можете указать желание посетить пробное занятие в форме, и мы пригласим вас, когда появится такая возможность.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item mb-3">
+                            <button class="faq-question">
+                                Что нужно для первого занятия?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Для пробного занятия подойдет удобная спортивная одежда, не сковывающая движения (легинсы, футболка, носки). Сменная обувь обязательна (чешки или балетки). Воду для питья можно взять с собой.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item mb-3">
+                            <button class="faq-question">
+                                Как проходит отбор в группы?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Мы принимаем всех желающих! Отбор не проводится. Группы формируются по возрасту и уровню подготовки. Тренер оценивает физические данные ребенка только для определения оптимальной нагрузки и подбора упражнений.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="logo-footer-container">
+                            <div class="logo-footer-bg">
+                                <img src="images/Colibri.png" alt="Логотип Колибри" class="logo-footer-img">
+                            </div>
+                            <div class="logo-footer-fallback">
+                                <span>К</span>
+                            </div>
+                        </div>
+                        <h4 class="text-white mb-0">Колибри</h4>
+                    </div>
+                    <p class="text-light opacity-75">Детский образцовый коллектив студия спортивного танца "Колибри". Является неоднократным победителем Международных, Всероссийских, Республиканских, Межрегиональных конкурсов, фестивалей, чемпионатов по танцевальному искусству.</p>
+                    <div class="social-links">
+                        <a href="https://vk.com/sst_kolibri" class="social-link" target="_blank"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-white mb-3">Разделы сайта</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html#about" class="text-light text-decoration-none d-block mb-2 opacity-75 hover-opacity-100">О студии</a></li>
+                        <li><a href="index.html#trainer" class="text-light text-decoration-none d-block mb-2 opacity-75 hover-opacity-100">Наш тренер</a></li>
+                        <li><a href="index.html#directions" class="text-light text-decoration-none d-block mb-2 opacity-75 hover-opacity-100">Направления</a></li>
+                        <li><a href="index.html#schedule" class="text-light text-decoration-none d-block mb-2 opacity-75 hover-opacity-100">Расписание</a></li>
+                        <li><a href="index.html#gallery" class="text-light text-decoration-none d-block mb-2 opacity-75 hover-opacity-100">Последние новости</a></li>
+                        <li><a href="index.html#contacts" class="text-light text-decoration-none d-block mb-2 opacity-75 hover-opacity-100">Контакты</a></li>
+                        <li><a href="registration.html" class="text-light text-decoration-none d-block mb-2 opacity-75 hover-opacity-100">Запись на занятия</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-white mb-3">Контакты</h5>
+                    <p class="text-light mb-2 opacity-75"><i class="fas fa-map-marker-alt me-2"></i> пр. 9-й Пятилетки, 26-А, Чебоксары</p>
+                    <p class="text-light mb-2 opacity-75"><i class="fas fa-phone me-2"></i> +7 (906) 386-41-31</p>
+                    <p class="text-light mb-0 opacity-75"><i class="fas fa-envelope me-2"></i> sst.kolibri@mail.ru</p>
+                    <p class="text-light mt-3 opacity-75 small"><i class="fas fa-clock me-2"></i> Пн-Пт: 14:00-21:00, Сб: 10:00-18:00</p>
+                </div>
+            </div>
+            
+            <hr class="bg-light my-4 opacity-25">
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-light mb-0 opacity-75">&copy; 2025 Студия спортивного танца «Колибри». Все права защищены.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-light mb-0 opacity-75">
+                        <a href="#" class="text-light text-decoration-none opacity-75 hover-opacity-100">Политика конфиденциальности</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                childFirstName: document.getElementById('childFirstName').value,
+                childLastName: document.getElementById('childLastName').value,
+                childBirthDate: document.getElementById('childBirthDate').value,
+                childAge: document.getElementById('childAge').value,
+                experience: document.querySelector('input[name="experience"]:checked').value,
+                parentName: document.getElementById('parentName').value,
+                parentPhone: document.getElementById('parentPhone').value,
+                parentEmail: document.getElementById('parentEmail').value,
+                contactMethod: document.getElementById('contactMethod').value,
+                preferredSchedule: document.getElementById('preferredSchedule').value,
+                comments: document.getElementById('comments').value,
+                trialLesson: document.getElementById('trialLesson').checked,
+                emergencyContact: document.getElementById('emergencyContact').checked,
+                timestamp: new Date().toISOString()
+            };
+            
+            const phoneRegex = /^\+7\s?\(?\d{3}\)?\s?\d{3}-?\d{2}-?\d{2}$/;
+            if (!phoneRegex.test(formData.parentPhone.replace(/\s/g, ''))) {
+                showAlert('Пожалуйста, введите корректный номер телефона в формате +7 (XXX) XXX-XX-XX', 'danger');
+                return;
+            }
+            
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i> Отправка...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                const requestNumber = 'WA' + Date.now().toString().slice(-8);
+                document.getElementById('requestNumber').textContent = requestNumber;
+                
+                document.getElementById('registrationForm').classList.add('d-none');
+                document.getElementById('successMessage').classList.remove('d-none');
+                
+                console.log('Заявка на запись отправлена:', formData);
+                
+                window.scrollTo({
+                    top: document.getElementById('successMessage').offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            }, 1500);
+        });
+        
+        function printRequest() {
+            const printContent = `
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <title>Заявка в студию Колибри</title>
+                    <style>
+                        body { font-family: Arial, sans-serif; padding: 20px; }
+                        .header { text-align: center; margin-bottom: 30px; }
+                        .request-number { font-size: 18px; font-weight: bold; color: #5560D3; }
+                        .section { margin-bottom: 20px; }
+                        .label { font-weight: bold; color: #555; }
+                    </style>
+                </head>
+                <body>
+                    <div class="header">
+                        <h2>Студия спортивного танца «Колибри»</h2>
+                        <p>Заявка №${document.getElementById('requestNumber').textContent}</p>
+                        <p>Дата: ${new Date().toLocaleDateString('ru-RU')}</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>Информация о ребенке</h3>
+                        <p><span class="label">Имя:</span> ${document.getElementById('childFirstName').value}</p>
+                        <p><span class="label">Фамилия:</span> ${document.getElementById('childLastName').value}</p>
+                        <p><span class="label">Дата рождения:</span> ${document.getElementById('childBirthDate').value}</p>
+                        <p><span class="label">Возраст на сентябрь 2025:</span> ${document.getElementById('childAge').value} лет</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>Информация о родителе</h3>
+                        <p><span class="label">Имя родителя:</span> ${document.getElementById('parentName').value}</p>
+                        <p><span class="label">Телефон:</span> ${document.getElementById('parentPhone').value}</p>
+                        <p><span class="label">Email:</span> ${document.getElementById('parentEmail').value}</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h3>Примечания</h3>
+                        <p>Статус: Лист ожидания на 2025-2026 учебный год</p>
+                        <p>Дата обработки заявки: с 15 августа 2025 года</p>
+                    </div>
+                    
+                    <hr>
+                    <p style="font-size: 12px; color: #777; text-align: center;">
+                        Сохраните этот документ для отслеживания статуса заявки.<br>
+                        Контакты студии: +7 (906) 386-41-31, sst.kolibri@mail.ru
+                    </p>
+                </body>
+                </html>
+            `;
+            
+            const printWindow = window.open('', '_blank');
+            printWindow.document.write(printContent);
+            printWindow.document.close();
+            printWindow.focus();
+            printWindow.print();
+        }
+        
+        function showAlert(message, type) {
+            const alertDiv = document.createElement('div');
+            alertDiv.className = `alert alert-${type} alert-dismissible fade show mb-4`;
+            alertDiv.innerHTML = `
+                ${message}
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            `;
+            
+            const form = document.getElementById('registrationForm');
+            form.parentNode.insertBefore(alertDiv, form);
+            
+            setTimeout(() => {
+                if (alertDiv.parentNode) {
+                    const bsAlert = new bootstrap.Alert(alertDiv);
+                    bsAlert.close();
+                }
+            }, 5000);
+        }
+        
+        document.getElementById('parentPhone')?.addEventListener('input', function(e) {
+            let value = this.value.replace(/\D/g, '');
+            
+            if (value.startsWith('7') || value.startsWith('8')) {
+                value = '+7' + value.slice(1);
+            } else if (value.startsWith('9')) {
+                value = '+7' + value;
+            }
+            
+            if (value.length > 2) {
+                value = value.slice(0, 2) + ' (' + value.slice(2);
+            }
+            if (value.length > 7) {
+                value = value.slice(0, 7) + ') ' + value.slice(7);
+            }
+            if (value.length > 12) {
+                value = value.slice(0, 12) + '-' + value.slice(12);
+            }
+            if (value.length > 15) {
+                value = value.slice(0, 15) + '-' + value.slice(15);
+            }
+            if (value.length > 18) {
+                value = value.slice(0, 18);
+            }
+            
+            this.value = value;
+        });
+    </script>
+</body>
+</html>
