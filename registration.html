@@ -62,189 +62,97 @@
             </div>
         </div>
     </section>
-
     <section class="section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <div class="registration-container">
-                        <div class="alert alert-info mb-5">
-                            <div class="d-flex">
-                                <div class="me-3">
-                                    <i class="fas fa-info-circle fa-2x"></i>
-                                </div>
-                                <div>
-                                    <h5 class="alert-heading mb-2">Важная информация</h5>
-                                    <p class="mb-0">Все группы на текущий учебный год уже сформированы. Заполняя форму, вы попадаете в лист ожидания на 2025-2026 учебный год. Мы свяжемся с вами для уточнения деталей с 15 августа 2025 года.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="row mb-5">
-                            <div class="col-md-4 mb-4">
-                                <div class="feature-card text-center h-100">
-                                    <div class="feature-icon">
-                                        <i class="fas fa-clock"></i>
-                                    </div>
-                                    <h5>Лист ожидания</h5>
-                                    <p>Попадаете в приоритетный список на следующий учебный год</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-4">
-                                <div class="feature-card text-center h-100">
-                                    <div class="feature-icon">
-                                        <i class="fas fa-phone-volume"></i>
-                                    </div>
-                                    <h5>Первыми узнаете</h5>
-                                    <p>Мы свяжемся с вами как только появятся свободные места</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-4">
-                                <div class="feature-card text-center h-100">
-                                    <div class="feature-icon">
-                                        <i class="fas fa-calendar-check"></i>
-                                    </div>
-                                    <h5>Бронирование</h5>
-                                    <p>Ваше место в листе ожидания закрепляется за вами</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <form id="registrationForm">
-                            <div class="card shadow-sm mb-4">
-                                <div class="card-header bg-primary text-white">
-                                    <h5 class="mb-0"><i class="fas fa-user-circle me-2"></i> Информация о ребенке</h5>
-                                </div>
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-md-6 mb-3">
-                                            <label for="childFirstName" class="form-label">Имя ребенка*</label>
-                                            <input type="text" class="form-control" id="childFirstName" required>
-                                        </div>
-                                        <div class="col-md-6 mb-3">
-                                            <label for="childLastName" class="form-label">Фамилия ребенка*</label>
-                                            <input type="text" class="form-control" id="childLastName" required>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="row">
-                                        <div class="col-md-6 mb-3">
-                                            <label for="childBirthDate" class="form-label">Дата рождения*</label>
-                                            <input type="date" class="form-control" id="childBirthDate" required>
-                                        </div>
-                                        <div class="col-md-6 mb-3">
-                                            <label for="childAge" class="form-label">Возраст на сентябрь 2025*</label>
-                                            <select class="form-select" id="childAge" required>
-                                                <option value="" selected disabled>Выберите возраст</option>
-                                                <option value="4">4 года</option>
-                                                <option value="5">5 лет</option>
-                                                <option value="6">6 лет</option>
-                                                <option value="7">7 лет</option>
-                                                <option value="8">8 лет</option>
-                                                <option value="9">9 лет</option>
-                                                <option value="10">10 лет</option>
-                                                <option value="11">11 лет</option>
-                                                <option value="12">12 лет</option>
-                                                <option value="13">13 лет</option>
-                                                <option value="14">14 лет</option>
-                                                <option value="15">15 лет</option>
-                                                <option value="16">16 лет</option>
-                                                <option value="17">17 лет</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="mb-3">
-                                        <label class="form-label">Опыт занятий танцами/гимнастикой</label>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="experience" id="experienceNone" value="none" checked>
-                                            <label class="form-check-label" for="experienceNone">
-                                                Нет опыта
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="experience" id="experienceBeginner" value="beginner">
-                                            <label class="form-check-label" for="experienceBeginner">
-                                                Занимался(ась) ранее (до 1 года)
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="experience" id="experienceIntermediate" value="intermediate">
-                                            <label class="form-check-label" for="experienceIntermediate">
-                                                Занимался(ась) регулярно (1-3 года)
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="card shadow-sm mb-4">
-                                <div class="card-header bg-primary text-white">
-                                    <h5 class="mb-0"><i class="fas fa-user-tie me-2"></i> Информация о родителе</h5>
-                                </div>
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-md-6 mb-3">
-                                            <label for="parentName" class="form-label">Имя родителя*</label>
-                                            <input type="text" class="form-control" id="parentName" required>
-                                        </div>
-                                        <div class="col-md-6 mb-3">
-                                            <label for="parentPhone" class="form-label">Телефон*</label>
-                                            <input type="tel" class="form-control" id="parentPhone" required placeholder="+7 (___) ___-__-__">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="row">
-                                        <div class="col-md-6 mb-3">
-                                            <label for="parentEmail" class="form-label">Email*</label>
-                                            <input type="email" class="form-control" id="parentEmail" required placeholder="email@example.com">
-                                        </div>
-                                        <div class="col-md-6 mb-3">
-                                            <label for="contactMethod" class="form-label">Предпочтительный способ связи</label>
-                                            <select class="form-select" id="contactMethod">
-                                                <option value="phone">Телефонный звонок</option>
-                                                <option value="whatsapp">WhatsApp</option>
-                                                <option value="telegram">Telegram</option>
-                                                <option value="email">Email</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="card shadow-sm mb-4">
-                                <div class="card-header bg-primary text-white">
-                                    <h5 class="mb-0"><i class="fas fa-comments me-2"></i> Дополнительная информация</h5>
-                                </div>
-                                <div class="card-body">
-                                    <div class="mb-3">
-                                        <label for="preferredSchedule" class="form-label">Предпочтительное время занятий</label>
-                                        <select class="form-select" id="preferredSchedule">
-                                            <option value="any">Любое время</option>
-                                            <option value="morning">Утро (до 14:00)</option>
-                                            <option value="afternoon">День (14:00-17:00)</option>
-                                            <option value="evening">Вечер (после 17:00)</option>
-                                        </select>
-                                    </div>
-                                    
-                                    <div class="mb-3">
-                                        <label for="comments" class="form-label">Комментарии/Вопросы</label>
-                                        <textarea class="form-control" id="comments" rows="3" placeholder="Опишите особенности здоровья ребенка, укажите удобные дни для звонка, задайте вопросы..."></textarea>
-                                    </div>
-                                    
-                                    <div class="form-check mb-3">
-                                        <input class="form-check-input" type="checkbox" id="trialLesson" checked>
-                                        <label class="form-check-label" for="trialLesson">
-                                            Хочу записаться на пробное занятие (бесплатно)
-                                        </label>
-                                    </div>
-                                    
-                                    <div class="form-check mb-3">
-                                        <input class="form-check-input" type="checkbox" id="emergencyContact">
-                                        <label class="form-check-label" for="emergencyContact">
-                                            Разрешаю связываться с экстренными контактами (в случае необходимости)
-                                        </label>
-                                    </div>
+<div class="registration-card simple-form">
+    <div class="registration-header text-center">
+        <h3 class="mb-3">Предварительная запись</h3>
+        <p class="mb-0 opacity-90">Заполните основные данные для листа ожидания</p>
+    </div>
+    <div class="p-4 p-md-5">
+        <form id="registrationForm">
+            <div class="form-step" data-step="1">
+                <h5 class="mb-4">Основная информация</h5>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <label for="childName" class="form-label fw-semibold">Имя ребенка</label>
+                        <input type="text" class="form-control" id="childName" required 
+                               placeholder="Например: Анна">
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <label for="childAge" class="form-label fw-semibold">Возраст</label>
+                        <select class="form-select" id="childAge" required>
+                            <option value="" selected disabled>Выберите возраст</option>
+                            <option value="4-5">4 года</option>
+                            <option value="6-7">5 лет</option>
+                            <option value="8-9">6 лет</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-step" data-step="2">
+                <h5 class="mb-4">Контактные данные</h5>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <label for="parentName" class="form-label fw-semibold">Имя родителя</label>
+                        <input type="text" class="form-control" id="parentName" required 
+                               placeholder="Ваше имя">
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <label for="phone" class="form-label fw-semibold">Телефон</label>
+                        <input type="tel" class="form-control" id="phone" required 
+                               placeholder="+7 (___) ___-__-__">
+                    </div>
+                </div>
+                
+                <div class="mb-4">
+                    <label for="email" class="form-label fw-semibold">Email</label>
+                    <input type="email" class="form-control" id="email" 
+                           placeholder="email@example.com">
+                </div>
+            </div>
+        
+            <div class="mb-4">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="agreement" required>
+                    <label class="form-check-label small" for="agreement">
+                        Я согласен(а) с обработкой персональных данных и даю согласие на 
+                        <a href="#" class="text-primary">политику конфиденциальности</a>*
+                    </label>
+                </div>
+            </div>
+            
+            <div class="d-grid gap-3">
+                <button type="submit" class="btn btn-record btn-lg py-3">
+                    Отправить заявку
+                </button>
+                <button type="button" class="btn btn-outline-primary" 
+                        onclick="window.location.href='index.html'">
+                    Вернуться на главную
+                </button>
+            </div>
+        </form>
+        <div id="successMessage" class="success-notification d-none mt-5">
+            <div class="icon">
+                <i class="fas fa-check"></i>
+            </div>
+            <h3 class="mb-3">Заявка принята!</h3>
+            <p class="mb-4">Ваша заявка №<span id="requestNumber" class="fw-bold">WA123456</span> 
+               успешно добавлена в листе ожидания.</p>
+            <p class="mb-4">Мы свяжемся с вами с 15 августа 2025 года.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <button class="btn btn-light" onclick="window.location.href='index.html'">
+                    На главную
+                </button>
+                <button class="btn btn-outline-light" onclick="printRequest()">
+                    Сохранить номер
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
                                     
                                     <div class="form-check mb-4">
                                         <input class="form-check-input" type="checkbox" id="agreement" required>
@@ -575,4 +483,5 @@
         });
     </script>
 </body>
+
 </html>
