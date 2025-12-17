@@ -44,67 +44,49 @@ scrollTopBtn.addEventListener('click', function() {
         behavior: 'smooth'
     });
 });
-
-document.querySelectorAll('.gallery-tab').forEach(tab => {
-    tab.addEventListener('click', function() {
-        document.querySelectorAll('.gallery-tab').forEach(t => {
-            t.classList.remove('active');
-            t.classList.remove('btn-primary');
-            t.classList.add('btn-outline-primary');
-        });
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
         
-        this.classList.add('active');
-        this.classList.remove('btn-outline-primary');
-        this.classList.add('btn-primary');
-        
-        document.querySelectorAll('.gallery-content').forEach(content => {
-            content.classList.remove('active');
-        });
-        
-        const tabId = this.getAttribute('data-tab');
-        const selectedGallery = document.getElementById(`${tabId}-gallery`);
-        if (selectedGallery) {
-            selectedGallery.classList.add('active');
-        }
-    });
-});
-
-document.querySelectorAll('.faq-question').forEach(question => {
-    question.addEventListener('click', function() {
-        const answer = this.nextElementSibling;
-        const icon = this.querySelector('i');
-        
-        document.querySelectorAll('.faq-answer').forEach(ans => {
-            if (ans !== answer) {
-                ans.classList.remove('active');
-                const prevIcon = ans.previousElementSibling.querySelector('i');
-                if (prevIcon) {
-                    prevIcon.classList.remove('fa-chevron-up');
-                    prevIcon.classList.add('fa-chevron-down');
+        if (href.startsWith('#') && href !== '#') {
+            e.preventDefault();
+            const targetId = href;
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+                const navbarToggler = document.querySelector('.navbar-toggler');
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarToggler && !navbarToggler.classList.contains('collapsed')) {
+                    navbarToggler.click();
                 }
             }
-        });
-        
-        if(answer.classList.contains('active')) {
-            answer.classList.remove('active');
-            icon.classList.remove('fa-chevron-up');
-            icon.classList.add('fa-chevron-down');
-        } else {
-            answer.classList.add('active');
-            icon.classList.remove('fa-chevron-down');
-            icon.classList.add('fa-chevron-up');
+        }
+        else if (href.includes('.html#')) {
         }
     });
 });
-
-const routeBtn = document.getElementById('buildRoute');
-if (routeBtn) {
-    routeBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        const address = encodeURIComponent('пр. 9-й Пятилетки, 26-А, Чебоксары');
-        window.open(`https://yandex.ru/maps/?text=${address}`, '_blank');
-    });
-}
+document.addEventListener('DOMContentLoaded', function() {
+    // Проверяем, есть ли якорь в URL
+    const hash = window.location.hash;
+    if (hash) {
+        setTimeout(() => {
+            const targetElement = document.querySelector(hash);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            }
+        }, 100);
+    }
+    const logoImg = document.querySelector('.logo-img');
+    const logoFallback = document.querySelector('.logo-fallback');
+});
+document.getElementById('preRegistrationForm')?.addEventListener('submit', function(e) {
 
 document.addEventListener('DOMContentLoaded', function() {
     const logoImg = document.querySelector('.logo-img');
@@ -325,3 +307,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
