@@ -892,3 +892,43 @@ h1, h2, h3, h4, h5, h6 {
         justify-content: center;
     }
 }
+/* Стили для страницы записи */
+.registration-hero {
+    background: linear-gradient(135deg, rgba(85, 96, 211, 0.9), rgba(110, 120, 224, 0.85)), url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') no-repeat center center;
+    background-size: cover;
+}
+
+.registration-container {
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: var(--shadow-lg);
+}
+
+.success-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+}
+
+.card-header.bg-primary {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark)) !important;
+}
+
+/* Адаптивные стили для формы */
+@media (max-width: 768px) {
+    .registration-container {
+        padding: 20px;
+    }
+    
+    .registration-hero .lead {
+        font-size: 1.1rem;
+    }
+}
